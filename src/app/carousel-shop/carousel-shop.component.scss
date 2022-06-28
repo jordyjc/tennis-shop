@@ -25,10 +25,11 @@
       padding: 20% 7% 21% 35%;
     }
 
-    @media (max-width: 1155px) {
+    @media (min-width: 1155px) and (max-width: 1554px) {
       padding: 0;
       justify-content: center;
       align-items: center;
+      height: 75%;
     }
 
     .carousel-item {
