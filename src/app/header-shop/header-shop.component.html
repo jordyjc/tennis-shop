@@ -1,0 +1,53 @@
+<div class="back-image">
+  <div class="v-line"></div>
+  <div class="content">
+    <img src="../../assets/fill-2.png" />
+    <nav>
+      <div class="menu">
+        <ul>
+          <li
+            routerLinkActive="activo"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a routerLinkActive="active" routerLink="/">Inicio</a>
+          </li>
+          <li routerLinkActive="activo">
+            <a routerLinkActive="active" routerLink="/about"
+              >Acerca de nosotros</a
+            >
+          </li>
+          <li routerLinkActive="activo">
+            <a routerLinkActive="active" routerLink="/history">Historia</a>
+          </li>
+          <li routerLinkActive="activo">
+            <a routerLinkActive="active" routerLink="/contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu language">
+        <ul>
+          <li
+            class="language"
+            routerLinkActive="activo"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a class="lan" routerLinkActive="active" routerLink="/">ES</a>
+          </li>
+          <li class="language" routerLinkActive="activo">
+            <a class="lan" routerLinkActive="active" routerLink="/about">EN</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="description-nav">
+    <h1 class="">
+      {{ headerDescription }}
+      <span [ngStyle]="{ color: 'yellow' }">{{ headerSpan }}</span>
+    </h1>
+    <button>
+      {{ buttonLabel | uppercase }} <mat-icon>arrow_forward</mat-icon>
+    </button>
+  </div>
+</div>

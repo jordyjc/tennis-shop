@@ -1,16 +1,27 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { ContentShopComponent } from './content-shop/content-shop.component';
+import { HeaderShopComponent } from './header-shop/header-shop.component';
+import { MatIconModule } from '@angular/material/icon'
+import { NgModule } from '@angular/core';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselShopComponent } from './carousel-shop/carousel-shop.component';
+import { FooterShopComponent } from './footer-shop/footer-shop.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderShopComponent,
+    ContentShopComponent,
+    CarouselShopComponent,
+    FooterShopComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NoopAnimationsModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

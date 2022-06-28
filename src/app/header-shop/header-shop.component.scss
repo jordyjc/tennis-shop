@@ -1,0 +1,120 @@
+.back-image {
+  height: 785px;
+  background-image: url("../../assets/group@3x.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+  font-size: 16px;
+  letter-spacing: 1.4px;
+  width: 82%;
+  .menu {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      list-style: none;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 0;
+    }
+
+    li {
+      padding: 0;
+      margin-right: 25px;
+      a {
+        text-decoration: none;
+        color: white;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size 0.3s;
+      }
+    }
+    .activo a {
+      background-size: 50% 2px;
+    }
+    .activo .lan {
+      background-size: 0% 0;
+      font-weight: bold;
+    }
+    .language {
+      padding: 0;
+      margin-right: 15px;
+    }
+  }
+  .menu:last-child {
+    padding-right: 5%;
+  }
+}
+.v-line {
+  border-left: solid #ffffff;
+  height: 811px;
+  left: 10%;
+  position: absolute;
+}
+
+.description-nav {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 13% 15%;
+  width: 80%;
+  @media (min-width: 1861px) {
+    padding: 220px 550px 303px 13%;
+  }
+  h1 {
+    font-size: 53px;
+    margin-bottom: 50px;
+  }
+  button {
+    width: 269px;
+    height: 53px;
+    padding: 15px 10px 15px 15px;
+    color: #ffffff;
+    border-radius: 26.5px;
+    border: solid 2px #ffffff;
+    background-color: transparent;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+// @media (min-width: 1861px) {
+//   .description-nav {
+//     color: black;
+//     font-family: Arial, Helvetica, sans-serif;
+//     padding: 13% 15%;
+//     width: 80%;
+//     h1 {
+//       font-size: 53px;
+//       margin-bottom: 50px;
+//     }
+//     button {
+//       width: 269px;
+//       height: 53px;
+//       padding: 15px 10px 15px 15px;
+//       color: #ffffff;
+//       border-radius: 26.5px;
+//       border: solid 2px #ffffff;
+//       background-color: transparent;
+//       font-size: 13px;
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-evenly;
+//     }
+//   }
+// }
