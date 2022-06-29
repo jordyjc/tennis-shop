@@ -1,7 +1,13 @@
 <div class="back-image">
   <div class="v-line"></div>
   <div class="content">
-    <img src="../../assets/fill-2.png" />
+    <div class="logo"></div>
+    <span
+      style="font-size: 30px; cursor: pointer"
+      *ngIf="!open"
+      (click)="openNav()"
+      >&#9776; Menu</span
+    >
     <nav>
       <div class="menu">
         <ul>
@@ -39,6 +45,15 @@
         </ul>
       </div>
     </nav>
+    <div id="mySidenav" class="side-nav" *ngIf="open">
+      <a href="javascript:void(0)" class="closebtn" (click)="closeNav()"
+        >&times;</a
+      >
+      <a href="#">Inicio</a>
+      <a href="#">Acerca de nosotros</a>
+      <a href="#">Historia</a>
+      <a href="#">Contacto</a>
+    </div>
   </div>
 
   <div class="description-nav">

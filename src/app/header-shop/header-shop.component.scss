@@ -11,6 +11,43 @@
   align-items: center;
   justify-content: space-around;
   height: 100px;
+  @media (max-width: 692px) {
+    justify-content: flex-start;
+    padding: 12px;
+  }
+  .logo {
+    height: 37px;
+    width: 37px;
+    background-image: url("../../assets/fill-2.png");
+    background-position: center center;
+    background-size: cover;
+  }
+  .side-nav {
+    display: none;
+    flex-direction: column;
+    background-color: transparent;
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      &:first-child {
+        align-self: flex-end;
+        padding: 10px;
+      }
+    }
+    @media (max-width: 692px) {
+      display: flex;
+      height: 20px;
+      margin: 48px;
+    }
+  }
+  span {
+    display: none;
+    color: #ffffff;
+    @media (max-width: 692px) {
+      display: flex;
+      margin-left: 10%;
+    }
+  }
 }
 
 nav {
@@ -58,7 +95,11 @@ nav {
   .menu:last-child {
     padding-right: 5%;
   }
+  @media (max-width: 692px) {
+    display: none;
+  }
 }
+
 .v-line {
   border-left: solid #ffffff;
   height: 811px;

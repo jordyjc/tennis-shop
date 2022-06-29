@@ -5,9 +5,66 @@
   background-color: #cbe346;
   height: 203px;
   padding: 4%;
-
-  .footer-nav{
+  @media (max-width: 651px) {
+  }
+  .footer-nav {
     width: 100%;
+    @media (max-width: 651px) {
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+    }
+    @media (max-width: 360px) {
+      flex-direction: column;
+    }
+    .media-logos {
+      display: flex;
+      flex-direction: row;
+      @media (max-width: 651px) {
+        flex-direction: column;
+        div {
+          margin-bottom: 6px;
+        }
+      }
+      @media (max-width: 360px) {
+        flex-direction: row;
+      }
+      div {
+        margin-left: 12px;
+      }
+      .social-media-1 {
+        background-image: url("../../assets/group-23.png");
+        width: 31px;
+        height: 31px;
+        background-size: cover;
+      }
+      .social-media-2 {
+        background-image: url("../../assets/group-24.png");
+        width: 31px;
+        height: 31px;
+        background-size: cover;
+      }
+      .social-media-3 {
+        background-image: url("../../assets/group-25.png");
+        width: 31px;
+        height: 31px;
+        background-size: cover;
+      }
+      .social-media-4 {
+        background-image: url("../../assets/group-22.png");
+        width: 31px;
+        height: 31px;
+        background-size: cover;
+      }
+      .social-media-5 {
+        background-image: url("../../assets/group-26.png");
+        width: 31px;
+        height: 31px;
+        background-size: cover;
+      }
+    }
   }
   nav {
     display: flex;
@@ -16,6 +73,11 @@
     font-size: 16px;
     letter-spacing: 1.4px;
     width: 82%;
+    @media (max-width: 651px) {
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
     .menu {
       ul {
         display: flex;
@@ -24,6 +86,9 @@
         list-style: none;
         font-family: Arial, Helvetica, sans-serif;
         padding: 0;
+        @media (max-width: 651px) {
+          flex-direction: column;
+        }
       }
 
       li {
@@ -40,5 +105,12 @@
         }
       }
     }
+  }
+  .footer-logo {
+    height: 49px;
+    width: 55px;
+    background-image: url("../../assets/fill-2.png");
+    background-position: center center;
+    background-size: cover;
   }
 }
